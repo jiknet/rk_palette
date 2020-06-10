@@ -1,0 +1,36 @@
+html,body,p,h2{
+	padding:0px;
+	margin:0px;
+	font-family:'NotoSansKR',sans-serif;
+}
+.con_title{
+	margin:auto;
+	margin-top:15px;
+	width:90%;
+	line-height:50px;
+}
+.con_text{
+	margin:auto;
+	width:90%;
+	color:#2b2b2b;
+}
+.con_text_title{
+	margin-top:20px;
+	color:#039be5;
+	font-weight:bold;
+	font-size:16px;
+}
+.con_text_con{
+	margin-top:10px;
+	padding:7px;
+	line-height:27px;
+	border:1px solid #d0d0d0;
+	background-color:#f3f3f3;
+	font-size:13px;
+	color:#202124;
+}
+.con_text_con_source{
+	margin-top:10px;
+	border:1px solid #d0d0d0;
+	background-color:#f3f3f3;
+}

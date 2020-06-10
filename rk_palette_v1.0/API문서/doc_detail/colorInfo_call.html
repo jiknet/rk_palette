@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/doc_detail.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/font.css"/>
+</head>
+<body>
+	<h2 class="con_title" id="file_info">색상정보 호출</h2>
+	<div class="con_text">
+		<p class="con_text_title">색상정보 호출방법</p>
+		<p class="con_text_con">
+			[ backgroundColor 방법 ]: div와 같은 곳에 배경색으로 보여주는 방법
+			<br>[ text 방법 ]: 문자열로 hex색상 번호를 보여주는 방법
+		<p>
+
+		
+		<p class="con_text_title">설정 함수</p>
+		<p class="con_text_con">
+			rk_colorVal=[{"id":"태그 아이디","type":"출력방법"}];
+		<p>
+		
+		<p class="con_text_title">사용가능한 태그</p>
+		<p class="con_text_con">
+			div, input type=text, p 등등 모든 태그에 아이디값 설정해서 사용가능
+		<p>
+		
+		<p class="con_text_title">type 종류</p>
+		<p class="con_text_con">
+			[ hex ] : hex색상 번호를 문자열로 출력(ex)#ff0000)
+			<br>[ bk ] : css background-color 배경색으로 지정
+		<p>
+		
+	<p class="con_text_title">소스코드 예제</p>
+	<div class="con_text_con_source">
+	<!-- 소스코드 시작-->
+	<xmp class="showHtml">
+	<body>
+	<div id="get_palette"></div>
+	
+	//색상정보 표시할 div
+	<div id="color_div" style="width:70px;
+	height:30px;border:1px solid #000;">
+	</div>
+
+	<script src="rk_colorPalette_v1.0.js"></script>
+	<script>
+		//설정정보 입력(두가지설정을 모두 입력해도되고 
+		//hex 혹은 bk 하나만 설정해도된다)
+		rk_colorVal=[
+			{"id":"color_div","type":"hex"},
+			{"id":"color_div","type":"bk"},
+		];
+	</script>
+	</body>
+	</xmp>
+	<!-- 소스코드 종료-->
+	</div>
+		
+	</div>
+</body>
+</html>

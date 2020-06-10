@@ -1,0 +1,62 @@
+﻿#rk_palette_wrap{
+	display:none;
+	width:307px;
+	min-height:90px;
+	border:1px solid #c6c6c6;
+	border-radius:15px;
+	overflow:hidden;
+	padding:10px;
+	background-color:#f7f7f7;
+	box-shadow:0px 0px 5px 5px #e8e8e8;
+}
+#rk_can1,#rk_can2{
+	border:1px solid #c6c6c6;
+	border-radius:15px;
+	cursor:crosshair;
+}
+#rk_selColor{
+	float:left;
+	margin-left:20px;
+	width:27px;
+	height:27px;
+	border:1px solid #c6c6c6;
+	border-radius:9999px;
+}
+#rk_hex_color{
+	float:left;
+	margin-left:5px;
+	width:100px;
+	height:25px;
+	border:1px solid #c6c6c6;
+	text-align:center;
+}
+#rk_rgba_red,#rk_rgba_green,#rk_rgba_blue{
+	float:left;
+	margin-left:5px;
+	width:35px;
+	height:25px;
+	border:1px solid #c6c6c6;
+	text-align:center;
+	color:#555555;
+	background-color:#f7f7f7;
+	cursor:default;
+}
+#rk_btn_tot{
+	display:block;
+	margin-top:35px;
+	text-align:center;
+}
+#rk_sel_btn,#rk_cen_btn{
+	display:inline-block;
+	margin-left:5px;
+	width:47px;
+	height:29px;
+	border:1px solid #b3b3b3;
+	background:#ebebeb;
+	cursor:pointer;
+	font-size:12px;
+}
+#rk_sel_btn:hover, #rk_cen_btn:hover{
+	background:#eeffff;
+	border:1px solid #00a5ff;
+}

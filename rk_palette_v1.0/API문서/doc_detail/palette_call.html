@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/doc_detail.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/font.css"/>
+</head>
+<body>
+	<h2 class="con_title" id="file_info">palette 호출</h2>
+	<div class="con_text">
+		<p class="con_text_title">rk_colorPalette_init('위치id')</p>
+		<p class="con_text_con">원하는 위치에 palette 기능 불러오는 함수<p>
+
+	<p class="con_text_title">호출위치 소스코드</p>
+	<div class="con_text_con_source">
+	<!-- 소스코드 시작-->
+	<xmp class="showHtml">
+	<body>
+	<div id="get_palette"></div> //div선언
+	
+	<script src="rk_colorPalette.js"></script>
+	<script>
+		//css호출
+		rk_colorPalette_css("rk_colorPalette_v1.0.css");
+		//원하는 위차에 palette 기능 불러오기
+		rk_colorPalette_init("get_palette");
+	</script>
+	</body>
+	</xmp>
+	<!-- 소스코드 종료-->
+		</div>
+		
+	<p class="con_text_title">이벤트로 호출예제</p>
+	<div class="con_text_con_source">
+	<!-- 소스코드 시작-->
+	<xmp class="showHtml">
+	<body>
+	<div id="get_palette"></div> //div선언
+	<input type="button" id="opBtn" value="색상열기">//색상열기 버튼
+	
+	<script src="rk_colorPalette_v1.0.js"></script>
+	<script>
+		//css호출
+		rk_colorPalette_css("rk_colorPalette_v1.0.css");
+		//원하는 위차에 palette 기능 불러오기
+		rk_colorPalette_init("get_palette");
+		evt();
+		//버튼이벤트설정
+		function evt(){
+			var opBtn=document.getElementById("opBtn");
+			opBtn.addEventListener("click",function(){
+				rk_openPalette();//palettet 창띄우기
+			});
+		}
+	</script>
+	</body>
+	</xmp>
+	<!-- 소스코드 종료-->
+	</div>	
+
+	</div>
+</body>
+</html>

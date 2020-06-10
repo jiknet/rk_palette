@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div id="get_palette"></div>
+	<input type="button" id="opBtn" value="색상열기">
+	<input type="text" id="color_text" placeholder="가져온 색상값">
+	<div id="color_div" style="width:70px; height:30px;border:1px solid #000;"></div>
+
+	<script src="rk_colorPalette_v1.0.js"></script>
+	<script>
+		rk_colorPalette_init("get_palette");//원하는 위차에 palette 기능 불러오기
+		rk_colorPalette_css("rk_colorPalette_v1.0.css");//css경로 호출
+		//출력할 색상타입 설정, hex, bk(배경색)
+		//아래와 같이 입력해야 중복으로 설정가능하므로
+		rk_colorVal=[
+			{"id":"color_text","type":"hex"},
+			{"id":"color_div","type":"hex"},
+			{"id":"color_div","type":"bk"},
+			{"id":"color_text","type":"bk"},
+		];
+		evt();
+		function evt(){
+			var opBtn=document.getElementById("opBtn");
+			opBtn.addEventListener("click",function(){
+				rk_openPalette();//palettet 창띄우기
+			});
+		}
+	</script>
+</body>
+</html>
